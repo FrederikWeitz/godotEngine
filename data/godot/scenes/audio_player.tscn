@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg4femlyrat43"]
+
+[ext_resource type="AudioStream" uid="uid://1nq1n1nso2um" path="res://assets/audio/music.ogg" id="1_6cbcb"]
+[ext_resource type="Script" path="res://scripts/audio_player.gd" id="1_tm8uq"]
+
+[node name="AudioPlayer" type="Node"]
+script = ExtResource("1_tm8uq")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_6cbcb")
